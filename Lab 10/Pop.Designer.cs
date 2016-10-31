@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pop));
             this.rdP80 = new System.Windows.Forms.RadioButton();
             this.rdP90 = new System.Windows.Forms.RadioButton();
             this.rdPToday = new System.Windows.Forms.RadioButton();
@@ -41,7 +42,9 @@
             this.btnTotal = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnBackTo = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // rdP80
@@ -177,6 +180,16 @@
             this.btnBackTo.UseVisualStyleBackColor = true;
             this.btnBackTo.Click += new System.EventHandler(this.btnBackTo_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-5, -4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(891, 415);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // Pop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,11 +205,13 @@
             this.Controls.Add(this.txtPPrice);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Pop";
             this.Text = "Pop";
             this.Load += new System.EventHandler(this.Pop_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,5 +232,6 @@
         private System.Windows.Forms.Button btnTotal;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnBackTo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
