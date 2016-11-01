@@ -83,7 +83,8 @@ namespace Lab_10 // If Pop button is selected this application would display
 
         private void btnBackTo_Click(object sender, EventArgs e)
         {   // Brings user back to Form1
-            this.Hide();
+            if (iflers.IsEmpty(txtPPrice, "Total"))     //See if the total is empty
+                this.Hide();
         }
 
         private void btnClear_Click(object sender, EventArgs e)

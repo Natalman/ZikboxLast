@@ -72,7 +72,6 @@ namespace Lab_10 // If Country button is selected this application displays
             {
                 iflers.selection(lstCSummary, CountryTodays, lstCBought);
             }
-
         }
 
         private void btnTotal_Click(object sender, EventArgs e)
@@ -83,7 +82,8 @@ namespace Lab_10 // If Country button is selected this application displays
 
         private void btnBackTo_Click(object sender, EventArgs e)
         { // Hides this application and goes back to Form1
-            this.Hide();
+            if(iflers.IsEmpty(txtCPrice, "Total"))  //see if the total is empty
+                this.Hide();
         }
 
         private void btnClear_Click(object sender, EventArgs e)

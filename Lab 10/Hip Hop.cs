@@ -89,7 +89,8 @@ namespace Lab_10
 
         private void btnBackTo_Click(object sender, EventArgs e)
         {       // Brings user back to the previous application 
-            this.Hide();
+            if (iflers.IsEmpty(txtTotal, "Total"))      //see if the total is empty
+                this.Hide();
         }
 
         private void btnClear_Click(object sender, EventArgs e)

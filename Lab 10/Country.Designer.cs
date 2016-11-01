@@ -149,7 +149,7 @@
             this.lstCBought.FormattingEnabled = true;
             this.lstCBought.Location = new System.Drawing.Point(530, 35);
             this.lstCBought.Name = "lstCBought";
-            this.lstCBought.Size = new System.Drawing.Size(338, 264);
+            this.lstCBought.Size = new System.Drawing.Size(338, 251);
             this.lstCBought.TabIndex = 10;
             this.lstCBought.TabStop = false;
             this.lstCBought.SelectedIndexChanged += new System.EventHandler(this.lstCBought_SelectedIndexChanged);

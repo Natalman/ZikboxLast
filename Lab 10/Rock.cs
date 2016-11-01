@@ -84,7 +84,8 @@ namespace Lab_10        // If user selected Rock button this application would d
 
         private void btnBackTo_Click(object sender, EventArgs e)
         {               // Hides this application and goes back to Form1
-            this.Hide();
+            if (iflers.IsEmpty(txtRPrice, "Total"))     //See if the total is empty
+                this.Hide();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
